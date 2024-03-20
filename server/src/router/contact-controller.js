@@ -35,7 +35,7 @@ router.post("/contact", async (req, res) => {
 
 router.get('/contact', async (req, res) => {
 
-    const contacts = await Contact.findAll();
+    const contacts = await Contact.find();
 
     res.json({
         status: true,
